@@ -1,0 +1,8 @@
+vscode_tasks:
+  - name: configure_extensions
+    enabled: true
+vscode_extensions:
+  - { enabled: true, installed: true, name: 'redhat.ansible'  }
+  - { enabled: true, installed: true, name: 'redhat.vscode-yaml' }
+  - { enabled: true, installed: true, name: 'samuelcolvin.jinjahtml' }
+

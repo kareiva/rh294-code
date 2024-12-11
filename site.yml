@@ -1,0 +1,15 @@
+---
+- name: Install vscode
+  hosts: localhost
+  become: true
+  vars_files:
+    - vars/install.yml
+  roles:
+    - marcusburghardt.vscode
+
+- name: Configure extensions
+  hosts: localhost
+  vars_files:
+    - vars/configure.yml
+  roles:
+    - marcusburghardt.vscode
