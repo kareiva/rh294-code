@@ -1,14 +1,14 @@
 ---
 - name: Install vscode
-  hosts: localhost
-  become: true
+  hosts: workstation
+  remote_user: root
   vars_files:
     - vars/install.yml
   roles:
     - marcusburghardt.vscode
 
 - name: Configure extensions
-  hosts: localhost
+  hosts: workstation
   vars_files:
     - vars/configure.yml
   roles:
